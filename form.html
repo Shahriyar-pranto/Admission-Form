@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Admission From</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+
+  <style>
+  
+  .form-group .required .control-label:after {
+  content:"*";color:red;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+         
+  <table class="table" id="table1">
+    <thead>
+      <tr>
+        <th style="border-bottom: red 2px solid"><h5>Student Details</h5></th>
+      </tr>
+    </thead>
+  </table>
+</div>
+
+<div class="container">
+  <table class="table" id="table2">
+    <thead>
+      <tr style="font-weight: bold">Student Admission</tr>
+    </thead>
+  </table>
+  </div>
+
+<div class="container">
+   <p style="font-size: 15px; font-weight: bolder; font-family: sans-serif;">Fields marked with <b style="color: red">*</b> must be filled.</p>
+</div>
+
+<div style="margin: 30px 30px 30px 30px;">
+<form class="form-group form-inline offset-md-2">
+<div class="form-group row required">
+  <!--<label class="col-form-label col-md-4 control-label" style="font-weight: bold; color: grey;">Admission Number</label>
+  <input required="required" type="text" class="col-md-4 form-control" id="add-number">
+-->
+   <label class="col-form-label  control-label" style="font-weight: bold; color: grey;">Admission Number</label>
+    <input required="required" type="text" class="form-control mx-sm-3" aria-describedby="passwordHelpInline">
+
+    <label class="col-form-label  control-label" style="font-weight: bold; color: grey;">Admission Date</label>
+    <input required="required" type="date" class="form-control mx-sm-3" aria-describedby="passwordHelpInline">
+
+  <!--<label class="col-form-label col-md-4 control-label" style="font-weight: bold; color: grey;">Admission Date</label>
+  <input required="required" type="text" class="col-md-4 form-control" id="add-date">-->
+</div>
+</form>
+</div>
+
+<div class="container">
+  <table class="table" id="table3">
+    <thead>
+      <tr>
+        <th style="border-bottom: red 2px solid; border-top: none;"><h5>Personal Details</h5></th>
+      </tr>
+    </thead>
+  </table>
+  <div class="container"> 
+  <form class="form-group">
+  <div class="form-group row required">
+    <label  class="col-sm-2 col-form-label control-label ">First Name</label>
+    <div class="col-sm-10">
+      <input required="required" type="text" class="form-control" id="fname">
+    </div>
+  </div>
+  <div class="form-group row ">
+    <label  class="col-sm-2 col-form-label ">Middle Name</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="mname">
+    </div>
+  </div>
+    <div class="form-group row">
+    <label  class="col-sm-2 col-form-label">Last Name</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="lname">
+    </div>
+  </div>
+    <div class="form-group row required">
+    <label  class="col-sm-2 col-form-label control-label ">Date of Birth</label>
+    <div class="col-sm-10">
+      <input required="required" type="date" class="form-control" id="db">
+    </div>
+  </div>
+    <div class="form-group row">
+    <label for="staticEmail" class="col-sm-3 col-form-label">Gender</label>
+    <div class="col-sm-2 from-check-inline">
+      <label class="form-check-label" for="radio">
+      <input  type="radio" class="form-check-input" id="male" name="opradio" value="option1" checked="radio">Male</label>
+    </div>
+        <div class="col-sm-2 from-check-inline">
+      <label class="form-check-label" for="radio">
+      <input  type="radio" class="form-check-input" id="female" name="opradio" value="option1">Female</label>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label  class="col-sm-2 col-form-label">Blood Group</label>
+    <div class="col-sm-10">
+      <select class="form-control" id="blood">
+       <option selected>Unknown</option>
+        <option>A+</option>
+        <option>B+</option>
+        <option>A+</option>
+        <option>A-</option>
+        <option>B-</option>
+        <option>AB+</option>
+        <option>AB-</option>
+        <option>O+</option>
+        <option>O-</option>
+      </select> 
+    </div>
+  </div>
+  <div class="form-group row">
+    <label  class="col-sm-2 col-form-label">Birth Place</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="birthplace">
+    </div>
+  </div>
+    <div class="form-group row">
+    <label  class="col-sm-2 col-form-label">Nationality</label>
+    <div class="col-sm-10">
+      <select class="form-control" id="nationality">
+       <option selected>Bangladeshi</option>
+        <option>Indian</option>
+        <option>Chinese</option>
+        <option>Malaysian</option>
+        <option>SriLankan</option>
+
+      </select> 
+    </div>
+  </div>
+    <div class="form-group row">
+    <label  class="col-sm-2 col-form-label">Mother Tounge</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="mothertounge">
+    </div>
+  </div>
+      <div class="form-group row">
+    <label class="col-sm-2 col-form-label">Category</label>
+    <div class="col-sm-10">
+      <select class="form-control" id="nationality">
+       <option selected>Select a category</option>
+        <option></option>
+        <option></option>
+        <option></option>
+      </select> 
+    </div>
+  </div>
+    <div class="form-group row">
+    <label class="col-sm-2 col-form-label">Religion</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="religion">
+    </div>
+  </div>
+</form>
+</div>
+</div>
+
+<div class="container">
+    <table class="table" id="table4">
+    <thead>
+      <tr>
+        <th style="border-bottom: red 2px solid; border-top: none;"><h5>Contact Details</h5></th>
+      </tr>
+    </thead>
+  </table>
+    <div class="container"> 
+    <form class="form-group">
+      <div class="form-group row ">
+        <label  class="col-sm-2 col-form-label ">Address Line1</label>
+          <div class="col-sm-10">
+        <input type="text" class="form-control" id="address1">
+          </div>
+      </div>
+      <div class="form-group row ">
+        <label  class="col-sm-2 col-form-label ">Address Line2</label>
+          <div class="col-sm-10">
+        <input type="text" class="form-control" id="address2">
+          </div>
+      </div>
+      <div class="form-group row ">
+        <label  class="col-sm-2 col-form-label ">City</label>
+          <div class="col-sm-10">
+        <input type="text" class="form-control" id="city">
+          </div>
+      </div>
+      <div class="form-group row ">
+        <label  class="col-sm-2 col-form-label ">State</label>
+          <div class="col-sm-10">
+        <input type="text" class="form-control" id="state">
+          </div>
+      </div>
+      <div class="form-group row ">
+        <label  class="col-sm-2 col-form-label ">Pin Code</label>
+          <div class="col-sm-10">
+        <input type="text" class="form-control" id="pincode">
+          </div>
+      </div>
+      <div class="form-group row">
+        <label  class="col-sm-2 col-form-label">Country</label>
+          <div class="col-sm-10">
+            <select class="form-control" id="country">
+
+              <option selected>Bangladesh</option>
+              <option>India</option>
+              <option>China</option>
+              <option>Malaysia</option>
+              <option>Sri-Lanka</option>
+
+            </select> 
+          </div>
+      </div>
+      <div class="form-group row ">
+        <label  class="col-sm-2 col-form-label ">Phone</label>
+          <div class="col-sm-10">
+        <input type="text" class="form-control" id="phone">
+          </div>
+      </div>
+      <div class="form-group row ">
+        <label  class="col-sm-2 col-form-label ">Mobile</label>
+          <div class="col-sm-10">
+        <input type="text" class="form-control" id="mobile">
+          </div>
+      </div>
+      <div class="form-group row ">
+        <label for="staticEmail" class="col-sm-2 col-form-label ">Email</label>
+          <div class="col-sm-10">
+        <input type="text" class="form-control" id="email">
+          </div>
+      </div>
+    </form>
+  </div>
+</div>
+<div class="container">
+  <table class="table" id="table5">
+    <thead>
+      <tr>
+        <th style="border-bottom: red 2px solid; border-top: none;"><h5>Course & Batch Details</h5></th>
+      </tr>
+    </thead>
+  </table>   
+  <div class="container">
+    <form class="form-group">
+      <div class="form-group row required">
+        <label  class="col-sm-2 col-form-label control-label ">Course</label>
+          <div class="col-sm-10">
+            <select class="form-control" id="course">
+
+              <option selected>Select a course</option>
+              <option></option>
+              <option></option>
+              <option></option>
+              <option></option>
+
+            </select>
+          </div>
+      </div>
+      <div class="form-group row required">
+        <label  class="col-sm-2 col-form-label control-label ">Batch</label>
+          <div class="col-sm-10">
+            <select class="form-control" id="course">
+
+              <option selected>Select a batch</option>
+              <option></option>
+              <option></option>
+              <option></option>
+              <option></option>
+
+            </select>
+          </div>
+      </div>
+      <div class="form-group row ">
+        <label  class="col-sm-2 col-form-label ">Roll Number</label>
+          <div class="col-sm-10">
+        <input type="text" class="form-control" id="roll">
+          </div>
+      </div>
+    </form>
+  </div>
+</div>
+<div class="container">
+    <table class="table" id="table6">
+    <thead>
+      <tr>
+        <th style="border-bottom: red 2px solid; border-top: none;"><h5>Settings</h5></th>
+      </tr>
+    </thead>
+  </table>
+  <div class="container">
+    <form class="form-group">
+        <div class="form-group row ">
+        <label  class="col-sm-2 col-form-label ">Biometric ID</label>
+          <div class="col-sm-10">
+        <input type="text" class="form-control" id="bioid">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label  class="col-sm-4 col-form-label">Enable e-mail features</label>
+            <div class=" col-sm-4 form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" checked>
+                <label class="form-check-label" for="inlineCheckbox1"></label>
+            </div>
+          </div>
+          <div class="form-group row">
+          <label  class="col-sm-4 col-form-label">Assign Transport</label>
+            <div class=" col-sm-4 form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                <label class="form-check-label" for="inlineCheckbox1"></label>
+            </div>
+          </div>
+    </form>
+  </div> 
+</div>
+<div class="container">
+      <table class="table" id="table7">
+    <thead>
+      <tr>
+        <th style="border-bottom: red 2px solid; border-top: none;"><h5>Upload User's Photo</h5></th>
+      </tr>
+    </thead>
+  </table>
+  <div class="container">
+    <form class="form-group">
+        <div class="form-group row ">
+          <label  class="col-sm-2 col-form-label">Upload Photo</label>
+          <div class="col-sm-4">
+          <input type="file" id="img" name="img" accept="image/*">
+          </div>
+          <div class="col-sm-4" style="border: 2px solid grey;">
+            <p>Maximum Image size is (<b>500KB</b>)</p>
+            <p>Recommended resoulation is (<b>300x300</b>)</p>
+          </div>
+        </div>
+    </form>
+  </div> 
+</div>
+<div class="container">
+<button type="button" class="btn btn-dark offset-md-5 rounded border border-warning"><i class="fa fa-play"></i>    Save & Proceed</button>
+</div>
+<div class="container" style="border-bottom: red 2px solid;>
+
+</div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
